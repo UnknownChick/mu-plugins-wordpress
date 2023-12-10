@@ -1,17 +1,17 @@
 <?php
 /**
  * @package MymeType Support
- * @author QS
- * @link https://qs.team
+ * @author Alexandre Ferreira
+ * @link https://alexandre-ferreira.fr
  * 
  * @wordpress-plugin
  * Plugin Name: Remove Link Attachment Media
- * Plugin URI: https://qs.team
+ * Plugin URI: https://alexandre-ferreira.fr
  * Description: Surpprime les liens de page pour les medias
  * Version: 1.0
- * Author: QS
- * Author URI: https://qs.team
- * Text Domain: qs
+ * Author: Alexandre Ferreira
+ * Author URI: https://alexandre-ferreira.fr
+ * Text Domain: alexxandre
  * License: MIT License
  */
 

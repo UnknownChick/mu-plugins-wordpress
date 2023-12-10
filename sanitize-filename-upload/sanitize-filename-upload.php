@@ -1,17 +1,17 @@
 <?php
 /**
  * @package Sanitize Filename Upload
- * @author QS
- * @link https://qs.team
+ * @author Alexandre Ferreira
+ * @link https://alexandre-ferreira.fr
  * 
  * @wordpress-plugin
  * Plugin Name: Sanitize Filename Upload
- * Plugin URI: https://qs.team
+ * Plugin URI: https://alexandre-ferreira.fr
  * Description: Lors d'un upload de ficher : supprime les accents, remplace '_' par '-' et met en minuscule
  * Version: 1.0
- * Author: QS
- * Author URI: https://qs.team
- * Text Domain: qs
+ * Author: Alexandre Ferreira
+ * Author URI: https://alexandre-ferreira.fr
+ * Text Domain: alexxandre
  * License: MIT License
  */
 
