@@ -7,7 +7,7 @@
  * @wordpress-plugin
  * Plugin Name: Remove Version
  * Plugin URI: https://alexandre-ferreira.fr
- * Description: Suppression de la version de WordPress, CSS et JS
+ * Description: Removes WordPress version, CSS, and JS version strings
  * Version: 1.0
  * Author: Alexandre Ferreira
  * Author URI: https://alexandre-ferreira.fr
@@ -18,9 +18,9 @@
 defined('ABSPATH') || die();
 
 /**
- * Suppresion de la verison de WordPress
- * 
- * @return [type]
+ * Removes the WordPress version number from the website.
+ *
+ * @return void
  */
 function wp_version_remove() {
 	return '';
@@ -28,21 +28,18 @@ function wp_version_remove() {
 add_filter('the_generator', 'wp_version_remove');
 
 /**
- * Suppresion des versions des fichiers CSS et JS
- * 
- * @param mixed $src
- * 
- * @return [type]
+ * Removes the WordPress version strings from the given source.
+ *
+ * @param string $src The source code or URL.
+ * @return string The modified source code or URL without the WordPress version strings.
  */
-function remove_wp_version_strings($src) {
-	global $wp_version;
-	parse_str(parse_url($src, PHP_URL_QUERY), $query);
-	if (!empty($query['ver']) && $query['ver'] === $wp_version) {
+function remove_css_js_version($src) {
+	if(strpos($src, '?ver='))
 		$src = remove_query_arg('ver', $src);
-	}
 	return $src;
 }
-add_filter('script_loader_src', 'remove_wp_version_strings', 15, 1);
-add_filter('style_loader_src', 'remove_wp_version_strings', 15, 1);
+add_filter('style_loader_src', 'remove_css_js_version', 10, 2);
+add_filter('script_loader_src', 'remove_css_js_version', 10, 2);
+
 remove_action('wp_head', 'wp_generator');
 ?>

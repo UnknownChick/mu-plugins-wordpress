@@ -7,7 +7,7 @@
  * @wordpress-plugin
  * Plugin Name: MimeType Support
  * Plugin URI: https://alexandre-ferreira.fr
- * Description: Accceptation upload SVG et PDF
+ * Description: Accept SVG and PDF uploads
  * Version: 1.0
  * Author: Alexandre Ferreira
  * Author URI: https://alexandre-ferreira.fr
@@ -17,10 +17,12 @@
 
 defined('ABSPATH') || die();
 
+
 /**
- * @param mixed $mime_types
- * 
- * @return [type]
+ * Function to support MIME types.
+ *
+ * @param array $mime_types An array of MIME types.
+ * @return void
  */
 function mimeType_support($mime_types){
 	$mime_types['svg'] = 'image/svg+xml';

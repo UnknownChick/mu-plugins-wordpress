@@ -7,7 +7,7 @@
  * @wordpress-plugin
  * Plugin Name: Remove Link Attachment Media
  * Plugin URI: https://alexandre-ferreira.fr
- * Description: Surpprime les liens de page pour les medias
+ * Description: Removes page links for media attachments
  * Version: 1.0
  * Author: Alexandre Ferreira
  * Author URI: https://alexandre-ferreira.fr
@@ -17,11 +17,15 @@
 
 defined('ABSPATH') || die();
 
+
 /**
- * @param mixed $data
- * @param mixed $postarr
- * 
- * @return [type]
+ * Disables attachment URLs.
+ *
+ * This function is used to disable the URLs of attachments in WordPress.
+ * It takes the attachment data as input and modifies it to remove the attachment URLs.
+ *
+ * @param array $data The attachment data.
+ * @return array The modified attachment data.
  */
 function disable_attachment_urls($data) {
 	if (isset( $data['post_type']) && $data['post_type'] == 'attachment') {

@@ -2,20 +2,20 @@
 
 ## Installation
 
-**Wordpress natif** : Créez un dossier ```/mu-plugins``` dans le dossier ```/wp-content``` et placez les scripts php
+**Native Wordpress**: Create a ```/mu-plugins``` folder in the ```/wp-content``` directory and place the PHP scripts there.
 
-**Wordpress bedrock** : Créez un dossier ```/mu-plugins``` dans le dossier ```/web/app``` et placez les scripts php
+**Wordpress bedrock**: Create a ```/mu-plugins``` folder in the ```/web/app``` directory and place the PHP scripts there.
 
-## Liste des mu-plugins
+## List of mu-plugins
 
-- <ins>MymeType Support :</ins> Ajoute le support d'upload de différent type de fichier dans le backoffice
+- <ins>MymeType Support:</ins> Adds support for uploading different file types in the backend.
 
-- <ins>Remove Unnecessary Script :</ins> Supprime le chargement de script non nécessaire afin d'améliorer les performances (*Pensez à bien regarder si certains scripts ne pourrait pas être utilisés*)
+- <ins>Remove Unnecessary Script:</ins> Removes unnecessary script loading to improve performance (*Make sure to check if any scripts could still be used*).
 
-- <ins>Remove Version :</ins> Supprime la version de wordpress et des fichiers CSS et JS
+- <ins>Remove Version:</ins> Removes the WordPress version and CSS and JS file versions.
 
-- <ins>Sanitizer Filename Upload :</ins> Formate les urls des fichier uppload dans la mediathèque
+- <ins>Sanitizer Filename Upload:</ins> Formats the URLs of uploaded files in the media library.
 
-- <ins>Remove Pings :</ins> Supprime les pings et les trackbacks
+- <ins>Remove Pings:</ins> Removes pings and trackbacks.
 
-- <ins>Remove Link Attachment Media :</ins> Surpprime les liens de page pour les medias
+- <ins>Remove Link Attachment Media:</ins> Removes page links for media.

@@ -7,7 +7,7 @@
  * @wordpress-plugin
  * Plugin Name: Remove Pings
  * Plugin URI: https://alexandre-ferreira.fr
- * Description: Suppression des pings et des trackbacks
+ * Description: Removes pings and trackbacks
  * Version: 1.0
  * Author: Alexandre Ferreira
  * Author URI: https://alexandre-ferreira.fr
@@ -17,12 +17,12 @@
 
 defined('ABSPATH') || die();
 
+
 /**
- * Supprime les pings et des trackbacks
- * 
- * @param mixed $links
- * 
- * @return [type]
+ * Disables self trackback for the given links array.
+ *
+ * @param array $links The array of links.
+ * @return void
  */
 function disable_self_trackback(&$links) {
 	foreach ($links as $l => $link)

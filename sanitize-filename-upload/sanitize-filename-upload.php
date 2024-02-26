@@ -7,7 +7,7 @@
  * @wordpress-plugin
  * Plugin Name: Sanitize Filename Upload
  * Plugin URI: https://alexandre-ferreira.fr
- * Description: Lors d'un upload de ficher : supprime les accents, remplace '_' par '-' et met en minuscule
+ * Description: When uploading a file: removes accents, replaces '_' with '-', and converts to lowercase
  * Version: 1.0
  * Author: Alexandre Ferreira
  * Author URI: https://alexandre-ferreira.fr
@@ -18,10 +18,10 @@
 defined('ABSPATH') || die();
 
 /**
- * Sanitize the filename
+ * Sanitizes a filename by removing any potentially harmful characters.
  *
- * @param string $filename The filename.
- * @return string Sanitized filename.
+ * @param string $filename The filename to sanitize.
+ * @return string The sanitized filename.
  */
 function sanitize_filename($filename) {
 	$sanitized_filename = remove_accents($filename);
