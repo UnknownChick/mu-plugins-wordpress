@@ -27,7 +27,7 @@ function remove_block_css() {
 		wp_dequeue_style('wp-block-library-theme');
 	}
 }
-add_action('wp_enqueue_scripts', 'apmu_remove_block_css');
+add_action('wp_enqueue_scripts', 'remove_block_css');
 
 
 /**
